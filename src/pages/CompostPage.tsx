@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ChevronRight, Clock, Thermometer, Droplets } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Clock, Thermometer, Droplets, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
   Accordion,
