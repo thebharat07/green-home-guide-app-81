@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
@@ -14,8 +13,8 @@ const SettingsPage = () => {
 
   const languageOptions = [
     { value: 'en', label: 'English', flag: '🇬🇧' },
-    { value: 'es', label: 'Español', flag: '🇪🇸' },
-    { value: 'fr', label: 'Français', flag: '🇫🇷' },
+    { value: 'te', label: 'Telugu', flag: '🇮🇳' },
+    { value: 'hi', label: 'Hindi', flag: '🇮🇳' },
   ];
 
   return (

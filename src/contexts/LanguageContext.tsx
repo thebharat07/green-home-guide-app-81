@@ -1,44 +1,9 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-// Define available languages
-export type Language = 'en' | 'es' | 'fr';
+// Update the Language type
+export type Language = 'en' | 'te' | 'hi';
 
-// Define translation structure
-export type Translations = {
-  home: {
-    title: string;
-    subtitle: string;
-    categories: {
-      compost: string;
-      recycle: string;
-      hazardous: string;
-      general: string;
-      organic: string;
-    };
-  };
-  navigation: {
-    home: string;
-    compost: string;
-    recycle: string;
-    quiz: string;
-    settings: string;
-  };
-  common: {
-    learnMore: string;
-    back: string;
-    next: string;
-    start: string;
-    finish: string;
-  };
-  languages: {
-    en: string;
-    es: string;
-    fr: string;
-  };
-};
-
-// Define available translations
+// Update translations for Telugu and Hindi
 const translations: Record<Language, Translations> = {
   en: {
     home: {
@@ -72,68 +37,68 @@ const translations: Record<Language, Translations> = {
       fr: 'French'
     }
   },
-  es: {
+  te: {
     home: {
-      title: 'Guía de Gestión de Residuos',
-      subtitle: 'Aprende cómo gestionar correctamente los residuos domésticos',
+      title: 'వ్యర్థ నిర్వహణ మార్గదర్శిका',
+      subtitle: 'ఇంటి వ్యర్థాలను సరిగ్గా ఎలా నిర్వహించాలో తెలుసుకోండి',
       categories: {
-        compost: 'Compostaje',
-        recycle: 'Reciclaje',
-        hazardous: 'Residuos Peligrosos',
-        general: 'Residuos Generales',
-        organic: 'Residuos Orgánicos'
+        compost: 'కంపోస్టింగ్',
+        recycle: 'రీసైక్లింగ్',
+        hazardous: 'ప్రమాదకర వ్యర్థం',
+        general: 'సాధారణ వ్యర్థం',
+        organic: 'సేంద్రిয వ్యర్థం'
       }
     },
     navigation: {
-      home: 'Inicio',
-      compost: 'Compostaje',
-      recycle: 'Reciclaje',
-      quiz: 'Pon a Prueba tus Conocimientos',
-      settings: 'Configuración'
+      home: 'హోం',
+      compost: 'కంపోస్టింగ్',
+      recycle: 'రీసైక్లింగ్',
+      quiz: 'మీ జ్ఞానాన్ని పరీక్షించుకోండి',
+      settings: 'సెట్టింగ్స్'
     },
     common: {
-      learnMore: 'Más Información',
-      back: 'Atrás',
-      next: 'Siguiente',
-      start: 'Comenzar',
-      finish: 'Finalizar'
+      learnMore: 'మరింత తెలుసుకోండి',
+      back: 'వెనక్కు',
+      next: 'తర్వాత',
+      start: 'ప్రారంభం',
+      finish: 'ముగింపు'
     },
     languages: {
-      en: 'Inglés',
-      es: 'Español',
-      fr: 'Francés'
+      en: 'ఇంగ్లిష్',
+      te: 'తెలుగు',
+      hi: 'హిందీ'
     }
   },
-  fr: {
+  hi: {
     home: {
-      title: 'Guide de Gestion des Déchets',
-      subtitle: 'Apprenez à gérer correctement les déchets ménagers',
+      title: 'कचरा प्रबंधन गाइड',
+      subtitle: 'घरेलू कचरे को सही तरीके से कैसे प्रबंधित करें',
       categories: {
-        compost: 'Compostage',
-        recycle: 'Recyclage',
-        hazardous: 'Déchets Dangereux',
-        general: 'Déchets Généraux',
-        organic: 'Déchets Organiques'
+        compost: 'कंपोस्टिंग',
+        recycle: 'रीसाइक्लिंग',
+        hazardous: 'खतरनाक कचरा',
+        general: 'सामान्य कचरा',
+        organic: 'जैविक कचरा'
       }
     },
     navigation: {
-      home: 'Accueil',
-      compost: 'Compostage',
-      recycle: 'Recyclage',
-      quiz: 'Testez vos Connaissances',
-      settings: 'Paramètres'
+      home: 'होम',
+      compost: 'कंपोस्टिंग',
+      recycle: 'रीसाइक्लिंग',
+      quiz: 'अपना ज्ञान परखें',
+      settings: 'सेटिंग्स'
     },
     common: {
-      learnMore: 'En Savoir Plus',
-      back: 'Retour',
-      next: 'Suivant',
-      start: 'Commencer',
-      finish: 'Terminer'
+      learnMore: 'और जानें',
+      back: 'वापस',
+      next: 'अगला',
+      start: 'शुरू करें',
+      finish: 'समाप्त करें'
     },
     languages: {
-      en: 'Anglais',
-      es: 'Espagnol',
-      fr: 'Français'
+      en: 'अंग्रेजी',
+      te: 'तेलुगु',
+      hi: 'हिंदी'
     }
   }
 };
@@ -151,7 +116,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [language, setLanguage] = useState<Language>('en');
   const [t, setTranslations] = useState<Translations>(translations.en);
 
-  const availableLanguages: Language[] = ['en', 'es', 'fr'];
+  const availableLanguages: Language[] = ['en', 'te', 'hi'];
 
   useEffect(() => {
     // Load saved language preference from localStorage
