@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
+import VideoSection from '@/components/VideoSection';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -101,6 +101,13 @@ const RecyclePage = () => {
           <h1 className="text-3xl font-bold text-primary mb-2">{t.home.categories.recycle}</h1>
           <p className="text-gray-600">Learn what items can be recycled and how to prepare them properly.</p>
         </motion.div>
+
+        <VideoSection
+          title="Proper Recycling Techniques"
+          videoUrl="https://www.youtube.com/watch?v=example2"
+          description="Learn how to properly sort and prepare materials for recycling."
+          thumbnail="/photo-1523712999610-f77fbcfc3843"
+        />
 
         <div className="mb-8">
           <h2 className="section-heading text-recyclable">Common Recyclable Items</h2>

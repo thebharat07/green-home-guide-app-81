@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
+import VideoSection from '@/components/VideoSection';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronRight, Clock, Thermometer, Droplets, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -161,6 +161,13 @@ const CompostPage = () => {
           <h1 className="text-3xl font-bold text-primary mb-2">{t.home.categories.compost}</h1>
           <p className="text-gray-600">Learn what items can be composted and how to maintain your compost pile.</p>
         </motion.div>
+
+        <VideoSection
+          title="How to Start Composting at Home"
+          videoUrl="https://www.youtube.com/watch?v=example"
+          description="Learn the basics of home composting with this step-by-step guide."
+          thumbnail="/photo-1465146344425-f00d5f5c8f07"
+        />
 
         <div className="mb-8">
           <h2 className="section-heading text-compost">What to Compost</h2>
