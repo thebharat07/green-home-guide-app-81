@@ -171,6 +171,13 @@ const CompostPage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading text-compost">What to Compost</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1501754041663-0e30d6ed0712" 
+              alt="Compostable materials"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
@@ -194,6 +201,13 @@ const CompostPage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading text-red-500">What NOT to Compost</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1504472478235-9bc48ba4d60f" 
+              alt="Non-compostable items"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-3 gap-4"
@@ -217,6 +231,13 @@ const CompostPage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading text-compost mb-4">How to Compost Different Types of Waste</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1500382017468-9049fed747ef" 
+              alt="Composting methods"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <Accordion type="single" collapsible className="w-full space-y-4">
             {compostingMethods.map((method, index) => (
@@ -270,6 +291,13 @@ const CompostPage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading">Composting Steps</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1473649085228-583485e6e4d7" 
+              alt="Composting process"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <div className="bg-white rounded-xl shadow-md p-5">
             <ol className="space-y-4">

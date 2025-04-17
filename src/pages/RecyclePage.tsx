@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
@@ -111,6 +112,13 @@ const RecyclePage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading text-recyclable">Common Recyclable Items</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1481761289552-381112059e05" 
+              alt="Recyclable items collection"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
@@ -134,6 +142,13 @@ const RecyclePage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading text-red-500">Common Non-Recyclable Items</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1542601906990-b4d3fb778b09" 
+              alt="Non-recyclable waste"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-3 gap-4"
@@ -157,6 +172,13 @@ const RecyclePage = () => {
 
         <div className="mb-8">
           <h2 className="section-heading">Recycling Tips</h2>
+          <div className="mb-4">
+            <img 
+              src="/photo-1532996122724-e3c354a0b15b" 
+              alt="Recycling process"
+              className="w-full h-48 object-cover rounded-lg shadow-md mb-4"
+            />
+          </div>
           
           <div className="bg-white rounded-xl shadow-md p-5">
             <ul className="space-y-4">
