@@ -10,6 +10,7 @@ import CompostPage from "./pages/CompostPage";
 import RecyclePage from "./pages/RecyclePage";
 import QuizPage from "./pages/QuizPage";
 import SettingsPage from "./pages/SettingsPage";
+import HazardousWastePage from "./pages/HazardousWastePage";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/compost" element={<CompostPage />} />
             <Route path="/recycle" element={<RecyclePage />} />
+            <Route path="/hazardous" element={<HazardousWastePage />} />
             <Route path="/quiz" element={<QuizPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<NotFound />} />
