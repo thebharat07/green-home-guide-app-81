@@ -1,4 +1,6 @@
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { Translations } from '../types/translations';
 
 // Update the Language type
 export type Language = 'en' | 'te' | 'hi';
@@ -33,20 +35,20 @@ const translations: Record<Language, Translations> = {
     },
     languages: {
       en: 'English',
-      es: 'Spanish',
-      fr: 'French'
+      te: 'Telugu',
+      hi: 'Hindi'
     }
   },
   te: {
     home: {
-      title: 'వ్యర్థ నిర్వహణ మార్గదర్శిका',
+      title: 'వ్యర్థ నిర్వహణ మార్గదర్శిక',
       subtitle: 'ఇంటి వ్యర్థాలను సరిగ్గా ఎలా నిర్వహించాలో తెలుసుకోండి',
       categories: {
         compost: 'కంపోస్టింగ్',
         recycle: 'రీసైక్లింగ్',
         hazardous: 'ప్రమాదకర వ్యర్థం',
         general: 'సాధారణ వ్యర్థం',
-        organic: 'సేంద్రిয వ్యర్థం'
+        organic: 'సేంద్రిය వ్యర్థం'
       }
     },
     navigation: {
