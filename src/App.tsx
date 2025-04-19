@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +10,8 @@ import RecyclePage from "./pages/RecyclePage";
 import QuizPage from "./pages/QuizPage";
 import SettingsPage from "./pages/SettingsPage";
 import HazardousWastePage from "./pages/HazardousWastePage";
+import GeneralWastePage from "./pages/GeneralWastePage";
+import OrganicWastePage from "./pages/OrganicWastePage";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,8 @@ const App = () => (
             <Route path="/compost" element={<CompostPage />} />
             <Route path="/recycle" element={<RecyclePage />} />
             <Route path="/hazardous" element={<HazardousWastePage />} />
+            <Route path="/general" element={<GeneralWastePage />} />
+            <Route path="/organic" element={<OrganicWastePage />} />
             <Route path="/quiz" element={<QuizPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<NotFound />} />
