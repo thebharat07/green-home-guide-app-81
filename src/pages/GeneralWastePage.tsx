@@ -14,25 +14,25 @@ const GeneralWastePage = () => {
       title: 'Paper Products',
       description: 'Used tissues, paper towels, and contaminated paper products.',
       handling: 'Place in regular trash bin.',
-      image: '/photo-1531297484001-80022131f5a1'
+      image: 'https://images.unsplash.com/photo-1618755506432-997cb3811f50?q=80'
     },
     {
       title: 'Food Packaging',
       description: 'Contaminated food wrappers, chip bags, and non-recyclable packaging.',
       handling: 'Dispose in regular trash.',
-      image: '/photo-1531297484001-80022131f5a1'
+      image: 'https://images.unsplash.com/photo-1528190336454-13cd56b45b5a?q=80'
     },
     {
       title: 'Personal Items',
       description: 'Diapers, sanitary products, and other personal care items.',
       handling: 'Seal in plastic bags before disposing.',
-      image: '/photo-1531297484001-80022131f5a1'
+      image: 'https://images.unsplash.com/photo-1605600659873-d808a13e4d18?q=80'
     },
     {
       title: 'Mixed Materials',
       description: 'Items made of multiple materials that cannot be separated.',
       handling: 'Place in regular waste bin.',
-      image: '/photo-1531297484001-80022131f5a1'
+      image: 'https://images.unsplash.com/photo-1589050150450-cc467ac110bc?q=80'
     }
   ];
 
