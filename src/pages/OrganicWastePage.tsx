@@ -14,25 +14,25 @@ const OrganicWastePage = () => {
       title: 'Food Scraps',
       description: 'Fruit and vegetable waste, coffee grounds, eggshells.',
       handling: 'Can be composted or disposed in organic waste bins.',
-      image: '/photo-1618160702438-9b02ab6515c9'
+      image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80'
     },
     {
       title: 'Garden Waste',
       description: 'Grass clippings, leaves, small branches, and plant trimmings.',
       handling: 'Ideal for composting or green waste collection.',
-      image: '/photo-1465146344425-f00d5f5c8f07'
+      image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80'
     },
     {
       title: 'Natural Fibers',
       description: 'Cotton, wool, and other natural fabric scraps.',
       handling: 'Can be composted if untreated and 100% natural.',
-      image: '/photo-1618160702438-9b02ab6515c9'
+      image: 'https://images.unsplash.com/photo-1595511890410-3b8dc237a537?q=80'
     },
     {
       title: 'Paper Products',
       description: 'Unbleached paper, cardboard, and natural paper products.',
       handling: 'Suitable for composting when torn into small pieces.',
-      image: '/photo-1618160702438-9b02ab6515c9'
+      image: 'https://images.unsplash.com/photo-1530989241-3650f6a00a82?q=80'
     }
   ];
 
