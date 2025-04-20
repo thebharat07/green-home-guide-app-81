@@ -11,11 +11,11 @@ const config: CapacitorConfig = {
   },
   android: {
     buildOptions: {
-      keystorePath: null,
-      keystoreAlias: null,
-      keystorePassword: null,
-      keystoreKeyPassword: null,
-      releaseType: 'APK'
+      keystorePath: 'release.keystore',
+      keystoreAlias: 'upload',
+      keystorePassword: 'your-keystore-password',
+      keystoreKeyPassword: 'your-key-password',
+      releaseType: 'AAB'  // Changed from APK to AAB (Android App Bundle) for Play Store
     }
   }
 };
