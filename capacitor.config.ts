@@ -2,11 +2,11 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.lovable.82034770a46b4a2f84ee791a56cc898c',
-  appName: 'green-home-guide-app',
+  appId: 'app.lovable.f80db6833d8942f59144c3186eeea373',
+  appName: 'green-home-guide-app-81',
   webDir: 'dist',
   server: {
-    url: 'https://82034770-a46b-4a2f-84ee-791a56cc898c.lovableproject.com?forceHideBadge=true',
+    url: 'https://f80db683-3d89-42f5-9144-c3186eeea373.lovableproject.com?forceHideBadge=true',
     cleartext: true
   },
   android: {
